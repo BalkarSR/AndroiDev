@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Assignment4</string>
+
+    <string name="sport_prompt">Choose a country</string>
+
+    <string-array name="sports">
+        <item></item>
+        <item>Baseball</item>
+        <item>Basketball</item>
+        <item>Football</item>
+        <item>Hockey</item>
+    </string-array>
+</resources>

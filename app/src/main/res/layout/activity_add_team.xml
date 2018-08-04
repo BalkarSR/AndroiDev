@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTeam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FF00"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:textStyle="bold">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City:"
+                    android:textSize="25sp"
+                    />
+
+                <EditText
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:id="@+id/city"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:textStyle="bold">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textSize="25sp"
+                    />
+
+                <EditText
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:id="@+id/teamName"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:textStyle="bold">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sport:"
+                    android:textSize="25sp"
+                    />
+
+                <Spinner
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/sports"
+                    android:prompt="@string/sport_prompt"
+                    android:textSize="25sp"
+                    android:id="@+id/sport"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:textStyle="bold">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MVP:"
+                    android:textSize="25sp"
+                    />
+
+                <EditText
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:id="@+id/mvp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:textStyle="bold">
+
+                <ImageView
+                    android:layout_width="350px"
+                    android:layout_height="300px"
+                    android:id="@+id/uploadImage"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/image_not_found"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="UPLOAD IMAGE"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00FF00"
+                    android:textColor="#FF0000"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/upload"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:textStyle="bold"
+            android:background="#0000FF">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:textSize="25dp"
+                android:background="#0000FF"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FF0000"
+                android:id="@+id/addTeam"
+                android:stateListAnimator="@null"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXIT"
+                android:textSize="25dp"
+                android:textColor="#FF0000"
+                android:background="#0000FF"
+                android:id="@+id/exit"
+                android:stateListAnimator="@null"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
